@@ -18,7 +18,12 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#2c2c2c] text-gray-300'>
       <div>
-        
+        <ul className='hidden md:flex'>
+          <li className='font-bold text-4xl'>
+              TOMAS SANCHEZ 
+              
+          </li>
+        </ul>
       </div>
 
       {/* menu */}
@@ -56,7 +61,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen bg-[#2c2c2c] flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>

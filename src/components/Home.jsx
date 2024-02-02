@@ -19,7 +19,7 @@ const Home = () => {
           Tomas Sanchez
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#2c2c2c]'>
-          I'm a Full Stack Developer.
+          I'm a Frontend Developer.
         </h2>
         <p className='text-[#2c2c2c] py-4 max-w-[700px]'>
           I’m a full-stack developer specializing in building (and occasionally
