@@ -22,9 +22,9 @@ const Home = () => {
           I'm a Frontend Developer.
         </h2>
         <p className='text-[#2c2c2c] py-4 max-w-[700px]'>
-          I’m a full-stack developer specializing in building (and occasionally
+          I’m a Frontend developer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
+          building responsive Frontend web applications.
         </p>
         <div>
         <Link to='work' smooth={true} duration={500}>
