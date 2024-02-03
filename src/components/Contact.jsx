@@ -4,7 +4,7 @@ import React from 'react'
 const miCorreoElectronico = 'tomassanchez2101@gmail.com';
 const Contact = () => {
   return (
-    <div name='about' className='w-full h-screen bg-gray-300 text-[#2c2c2c]'>
+    <div name='contact' className='w-full h-screen bg-gray-300 text-[#2c2c2c]'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
