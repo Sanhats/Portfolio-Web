@@ -8,6 +8,7 @@ import Node from '../assets/node.png';
 import FireBase from '../assets/firebase.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
+import Next from '../assets/next-js-icon-seeklogo.png'
 
 
 const Skills = () => {
@@ -42,7 +43,7 @@ const Skills = () => {
                   <p className='my-4'>GITHUB</p>
               </div>
               <div className='bg-[#2c2c2c] shadow-md shadow-[#2c2c2c] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Node} alt="HTML icon" />
+                  <img className='w-20 mx-auto' src={Next} alt="HTML icon" />
                   <p className='my-4'>NODE JS</p>
               </div>
               
