@@ -44,7 +44,7 @@ const Skills = () => {
               </div>
               <div className='bg-[#2c2c2c] shadow-md shadow-[#2c2c2c] hover:scale-110 duration-500'>
                   <img className='w-20 mx-auto' src={Next} alt="HTML icon" />
-                  <p className='my-4'>NODE JS</p>
+                  <p className='my-4'>NEXT JS</p>
               </div>
               
               <div className='bg-[#2c2c2c] shadow-md shadow-[#2c2c2c] hover:scale-110 duration-500'>
