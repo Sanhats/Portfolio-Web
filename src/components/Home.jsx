@@ -19,12 +19,13 @@ const Home = () => {
           Tomas Sanchez
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#2c2c2c]'>
-          I'm a Frontend Developer.
+          I'm a Full stack Developer.
         </h2>
         <p className='text-[#2c2c2c] py-4 max-w-[700px]'>
-          I’m a Frontend developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive Frontend web applications.
+          I’m a Full stack developer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, 
+          I am focused on creating interactive and innovative web 
+          applications for the user, both on the server and client side.
         </p>
         <div>
         <Link to='work' smooth={true} duration={500}>
