@@ -1,38 +1,62 @@
-import React from 'react'
+import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
-  
-const miCorreoElectronico = 'tomassanchez2101@gmail.com';
 const Contact = () => {
+  const miCorreoElectronico = 'tomassanchez2101@gmail.com';
+
   return (
-    <div name='contact' className='w-full h-screen bg-gray-300 text-[#2c2c2c]'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-gray-200'>
-              Contact
-            </p>
-          </div>
-          <div></div>
-          </div>
-          <div className=' '>
-            <ul>
-            <a href='https://linkedin.com/in/tomas-emanuel-sanchez-72670427b'  className='border-2 border-gray-800 bg-transparent py-2.5 px-5 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[] hover:text-white before:hover:scale-x-100'>
-                Linkedin
-            </a>
-            <a href={`mailto:${miCorreoElectronico}`}  className=' border-2 border-gray-800 bg-transparent py-2.5 px-5 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[] hover:text-white before:hover:scale-x-100'>
-                Email
-            </a>
-            <a
-              className='border-2 border-gray-800 bg-transparent py-2.5 px-5 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[] hover:text-white before:hover:scale-x-100'
-              href='https://funny-pixie-075.notion.site/TOMAS-EMANUEL-SANCHEZ-RESUME-2817caa582ed474984bc48c5e66e770a'
-            >
-              Resume
-            </a>
-            </ul>
-          </div>
+    <div name='contact' className='w-full min-h-screen bg-[#D3D3D3] text-[#2c2c2c] flex items-center justify-center'>
+      <div className='max-w-[1000px] w-full p-4 flex flex-col items-center'>
+        <div className='text-center mb-12'>
+          <h2 className='text-4xl font-bold inline-block border-b-4 border-[#2c2c2c] pb-2 mb-4'>
+            Contact
+          </h2>
+          <p className='text-xl mt-6'>Let's connect and create something amazing together</p>
+        </div>
+
+        <div className='flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-[600px]'>
+          <a
+            href='https://linkedin.com/in/tomas-emanuel-sanchez-72670427b'
+            target="_blank"
+            rel="noopener noreferrer"
+            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-[#2c2c2c] bg-transparent font-medium text-[#2c2c2c] transition-colors duration-300 hover:bg-[#2c2c2c] hover:text-gray-300'
+          >
+            <FaLinkedin className='text-xl' />
+            <span>LINKEDIN</span>
+          </a>
+
+          <a
+            href={`mailto:${miCorreoElectronico}`}
+            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-[#2c2c2c] bg-transparent font-medium text-[#2c2c2c] transition-colors duration-300 hover:bg-[#2c2c2c] hover:text-gray-300'
+          >
+            <HiOutlineMail className='text-xl' />
+            <span>EMAIL</span>
+          </a>
+
+          <a
+            href='https://funny-pixie-075.notion.site/TOMAS-EMANUEL-SANCHEZ-RESUME-2817caa582ed474984bc48c5e66e770a'
+            target="_blank"
+            rel="noopener noreferrer"
+            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-[#2c2c2c] bg-transparent font-medium text-[#2c2c2c] transition-colors duration-300 hover:bg-[#2c2c2c] hover:text-gray-300'
+          >
+            <BsFillPersonLinesFill className='text-xl' />
+            <span>RESUME</span>
+          </a>
+        </div>
+
+        <div className='text-center mt-12'>
+          <p className='text-lg'>
+            Looking forward to discussing potential opportunities and collaborations
+          </p>
+          <p className='text-sm mt-2 text-gray-600'>
+            Based in Argentina • Available for remote work worldwide
+          </p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
