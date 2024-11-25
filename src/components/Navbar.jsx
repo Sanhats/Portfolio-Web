@@ -15,46 +15,24 @@ const Navbar = () => {
   const miCorreoElectronico = 'tomassanchez2101@gmail.com';
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#2c2c2c] text-gray-300 z-50'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50'>
       <div>
-        <ul className='hidden md:flex'>
-          <li className='font-bold text-4xl'>
-            TOMAS SANCHEZ
-          </li>
-        </ul>
+        <h1 className='font-bold text-4xl text-pink-600'>TS</h1>
       </div>
 
       {/* menu */}
       <ul className='hidden md:flex'>
-        <li>
-          <Link to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to='skills' smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to='work' smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li>
-          <Link to='contact' smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        {['home', 'about', 'skills', 'work', 'contact'].map((item) => (
+          <li key={item}>
+            <Link to={item} smooth={true} duration={500} className='hover:text-pink-600 cursor-pointer capitalize px-4'>
+              {item}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -63,77 +41,41 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#2c2c2c] flex flex-col justify-center items-center z-50'
+            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center z-50'
         }
       >
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        {['home', 'about', 'skills', 'work', 'contact'].map((item) => (
+          <li key={item} className='py-6 text-4xl'>
+            <Link onClick={handleClick} to={item} smooth={true} duration={500} className='capitalize'>
+              {item}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0 z-40'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2c2c2c]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://linkedin.com/in/tomas-emanuel-sanchez-72670427b'
-              target="_blank"
-              rel="noopener noreferrer"
+          {[
+            { name: 'Linkedin', icon: <FaLinkedin size={30} />, href: 'https://linkedin.com/in/tomas-emanuel-sanchez-72670427b' },
+            { name: 'Github', icon: <FaGithub size={30} />, href: 'https://github.com/Sanhats' },
+            { name: 'Email', icon: <HiOutlineMail size={30} />, href: `mailto:${miCorreoElectronico}` },
+            { name: 'Resume', icon: <BsFillPersonLinesFill size={30} />, href: 'https://funny-pixie-075.notion.site/TOMAS-EMANUEL-SANCHEZ-RESUME-2817caa582ed474984bc48c5e66e770a' },
+          ].map((item) => (
+            <li
+              key={item.name}
+              className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0a192f]'
             >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2c2c2c]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/Sanhats'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2c2c2c]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href={`mailto:${miCorreoElectronico}`}
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2c2c2c]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://funny-pixie-075.notion.site/TOMAS-EMANUEL-SANCHEZ-RESUME-2817caa582ed474984bc48c5e66e770a'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+              <a
+                className='flex justify-between items-center w-full text-gray-300'
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.name} {item.icon}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
@@ -141,3 +83,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
