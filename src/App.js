@@ -1,19 +1,18 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Element } from 'react-scroll';
-import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import InteractiveBackground from './components/InteractiveBackground';
-import FloatingActionButton from './components/FloatingActionButton';
+import ImmersiveBackground from './components/ImmersiveBackground';
+import InnovativeNav from './components/InnovativeNav';
 
 const App = () => {
   return (
     <div className="bg-[#0a192f] relative">
-      <InteractiveBackground />
-      <Navbar />
+      <ImmersiveBackground />
+      <InnovativeNav />
       <Element name="home">
         <Home />
       </Element>
@@ -29,7 +28,6 @@ const App = () => {
       <Element name="contact">
         <Contact />
       </Element>
-      <FloatingActionButton />
     </div>
   );
 };

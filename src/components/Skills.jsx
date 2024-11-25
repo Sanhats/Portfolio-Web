@@ -10,58 +10,62 @@ import MySQL from '../assets/mysql.png';
 import Vue from '../assets/vue.png';
 import Python from '../assets/python.png';
 
+const Skills = () => {
+  const skills = [
+    { name: 'REACT', image: ReactImg },
+    { name: 'VUE.JS', image: Vue },
+    { name: 'NEXT JS', image: Next },
+    { name: 'PYTHON', image: Python },
+    { name: 'MONGODB', image: MongoDB },
+    { name: 'MYSQL', image: MySQL },
+    { name: 'TAILWIND', image: Tailwind },
+    { name: 'GITHUB', image: GitHub },
+  ];
 
+  return (
+    <div name='skills' className='w-full min-h-screen bg-[#0a192f] text-gray-300'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className='pb-8'
+        >
+          <p className='text-4xl font-bold inline border-b-4 border-purple-600'>Skills</p>
+          <p className='py-4'>These are the technologies I've worked with</p>
+        </motion.div>
 
- 
-  
-  const SkillCard = ({ skill, icon, index }) => {
-    return (
-      <motion.div
-        className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#0a192f] p-6 rounded-lg'
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: index * 0.1 }}
-        whileHover={{ 
-          rotate: [0, 5, -5, 0],
-          transition: { duration: 0.5 }
-        }}
-      >
-        <img className='w-20 mx-auto' src={icon} alt={`${skill} icon`} />
-        <p className='my-4 text-center text-white'>{skill}</p>
-      </motion.div>
-    );
-  };
-  
-  const Skills = () => {
-    const skills = [
-        { name: 'REACT', icon: ReactImg },
-    { name: 'VUE.JS', icon: Vue },
-    { name: 'NEXT JS', icon: Next },
-    { name: 'PYTHON', icon: Python },
-    { name: 'MONGODB', icon: MongoDB },
-    { name: 'MYSQL', icon: MySQL },
-    { name: 'TAILWIND', icon: Tailwind },
-    { name: 'GITHUB', icon: GitHub },
-    ];
-  
-    return (
-      <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-          <div>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Skills</p>
-            <p className='py-4'>These are the technologies I've worked with</p>
-          </div>
-  
-          <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
-            {skills.map((skill, index) => (
-              <SkillCard key={skill.name} skill={skill.name} icon={skill.icon} index={index} />
-            ))}
-          </div>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8'>
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className='shadow-lg rounded-xl overflow-hidden bg-[#112240] p-6 hover:bg-[#1a2f52] transition-all duration-300'
+            >
+              <div className='relative group'>
+                <img 
+                  className='w-20 h-20 mx-auto object-contain filter drop-shadow-lg' 
+                  src={skill.image} 
+                  alt={`${skill.name} icon`}
+                />
+                <motion.div 
+                  className='mt-4 text-lg font-semibold tracking-wider'
+                  initial={{ opacity: 0.8 }}
+                  whileHover={{ opacity: 1 }}
+                >
+                  {skill.name}
+                </motion.div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  export default Skills;
-  
-  
+    </div>
+  );
+};
+
+export default Skills;
+
