@@ -20,8 +20,9 @@ const ProjectCard = ({ project, index }) => {
     >
       <img 
         src={project.image} 
-        alt={project.name}
+        alt={`Captura de pantalla del proyecto ${project.name}`}
         className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+        loading="lazy"
       />
       
       <div className="absolute inset-0 bg-gradient-to-t from-purple-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -36,8 +37,9 @@ const ProjectCard = ({ project, index }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors duration-300"
+              aria-label={`Ver código del proyecto ${project.name} en GitHub`}
             >
-              Code
+              Código
             </a>
             {project.live && (
               <a
@@ -45,6 +47,7 @@ const ProjectCard = ({ project, index }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 border border-purple-600 text-white rounded hover:bg-purple-600 transition-colors duration-300"
+                aria-label={`Ver demo en vivo del proyecto ${project.name}`}
               >
                 Demo
               </a>
@@ -58,17 +61,22 @@ const ProjectCard = ({ project, index }) => {
 
 const Work = () => {
   return (
-    <div name='work' className='w-full min-h-screen bg-[#0a192f] text-gray-300'>
+    <section 
+      name='work' 
+      className='w-full min-h-screen bg-[#0a192f] text-gray-300'
+      aria-label="Sección de proyectos"
+    >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <motion.div 
           initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-purple-600'>
-            Work
-          </p>
-          <p className='py-6'>Check out some of my recent projects</p>
+          <h2 className='text-4xl font-bold inline border-b-4 text-gray-300 border-purple-600'>
+            Proyectos
+          </h2>
+          <p className='py-6 text-gray-400'>Algunos de mis proyectos recientes</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -77,7 +85,7 @@ const Work = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

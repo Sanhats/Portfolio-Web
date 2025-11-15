@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, my name is",
+    "name": "Tomas Sanchez",
+    "title": "Full Stack Developer",
+    "description": "Specialized in creating exceptional digital experiences. Currently focused on developing interactive and innovative web applications, both on the server and client side.",
+    "viewSkills": "View Skills"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Full Stack Developer passionate about creating innovative and efficient digital solutions.",
+    "description2": "Specialized in developing modern web applications with technologies like React, Vue.js, Next.js and Node.js. I focus on writing clean, scalable code and creating exceptional user experiences."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I work with"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional experience in software development",
+    "viewSite": "View site",
+    "technologies": "Technologies:",
+    "current": "Current",
+    "remote": "Remote",
+    "experiences": {
+      "adminiad": {
+        "position": "Full Stack Developer",
+        "period": "Current",
+        "description": "Stock and sales management system with artificial intelligence. Development of complete system functionalities, integration with third-party APIs and process optimization."
+      },
+      "rappidtech": {
+        "position": "Full Stack Developer",
+        "period": "Current",
+        "description": "Development of web and mobile applications for various clients. Teamwork on scalable projects with modern technologies."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's connect and create something amazing together",
+    "linkedin": "LINKEDIN",
+    "email": "EMAIL",
+    "resume": "RESUME",
+    "message": "Looking forward to discussing potential opportunities and collaborations",
+    "location": "Based in Argentina • Available for remote work worldwide"
+  }
+}
+

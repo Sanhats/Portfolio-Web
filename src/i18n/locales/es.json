@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Tomas Sanchez",
+    "title": "Desarrollador Full Stack",
+    "description": "Especializado en crear experiencias digitales excepcionales. Actualmente enfocado en desarrollar aplicaciones web interactivas e innovadoras, tanto en el lado del servidor como del cliente.",
+    "viewSkills": "Ver Habilidades"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Desarrollador Full Stack apasionado por crear soluciones digitales innovadoras y eficientes.",
+    "description2": "Especializado en el desarrollo de aplicaciones web modernas con tecnologías como React, Vue.js, Next.js y Node.js. Me enfoco en escribir código limpio, escalable y en crear experiencias de usuario excepcionales."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías con las que trabajo"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Experiencia profesional en desarrollo de software",
+    "viewSite": "Ver sitio",
+    "technologies": "Tecnologías:",
+    "current": "Actualidad",
+    "remote": "Remoto",
+    "experiences": {
+      "adminiad": {
+        "position": "Desarrollador Full Stack",
+        "period": "Actualidad",
+        "description": "Sistema de gestión de stock y ventas con inteligencia artificial. Desarrollo de funcionalidades completas del sistema, integración con APIs de terceros y optimización de procesos."
+      },
+      "rappidtech": {
+        "position": "Desarrollador Full Stack",
+        "period": "Actualidad",
+        "description": "Desarrollo de aplicaciones web y móviles para diversos clientes. Trabajo en equipo en proyectos escalables con tecnologías modernas."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Conectemos y creemos algo increíble juntos",
+    "linkedin": "LINKEDIN",
+    "email": "EMAIL",
+    "resume": "CURRÍCULUM",
+    "message": "Espero poder discutir oportunidades y colaboraciones potenciales",
+    "location": "Ubicado en Argentina • Disponible para trabajo remoto en todo el mundo"
+  }
+}
+

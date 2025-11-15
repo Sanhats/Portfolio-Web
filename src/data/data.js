@@ -15,7 +15,7 @@ export const data=[
         id:2,
         name:"Sign in/ Sign up ",
         image:RealEst,
-        description:"FIREBASE, Firestore, Authentication",
+        description:"Firebase, Firestore, Authentication",
         github:"https://github.com/Sanhats/netflix-clone-with-react-tailwind",
         live:"",
     },

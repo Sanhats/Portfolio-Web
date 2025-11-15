@@ -1,44 +1,38 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
-    <div name='about' className='w-full min-h-screen bg-[#0a192f] text-gray-300'>
-      <div className='flex flex-col justify-center items-center w-full h-full p-4'>
+    <section 
+      name='about' 
+      className='w-full min-h-screen bg-[#0a192f] text-gray-300 flex items-center justify-center'
+      aria-label="Sección sobre mí"
+    >
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <motion.div 
-          className='max-w-[1000px] w-full grid grid-cols-2 gap-8'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="text-center"
         >
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
-              About
+          <h2 className='text-4xl font-bold inline border-b-4 border-purple-600 mb-8'>
+            {t('about.title')}
+          </h2>
+          <div className="max-w-3xl mx-auto mt-8">
+            <p className='text-xl text-gray-300 leading-relaxed mb-4'>
+              {t('about.description1')}
             </p>
-          </div>
-          <div></div>
-        </motion.div>
-        <motion.div 
-          className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <div className='sm:text-right text-4xl font-bold'>
-            <p>Hello, nice to meet you. Please look around.</p>
-          </div>
-          <div>
-            <p className='text-xl'>
-              I am passionate about creating great software that improves the lives of those around me. I 
-              am enthusiastic about creating interactive software for clients. What would you do if you had a developer
-              with these features available at your fingertips?
-            </p>  
+            <p className='text-lg text-gray-400 leading-relaxed'>
+              {t('about.description2')}
+            </p>
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
