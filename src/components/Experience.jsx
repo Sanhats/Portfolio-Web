@@ -43,7 +43,11 @@ const ExperienceCard = ({ exp, index }) => {
         )}
       </div>
 
-      <p className="text-gray-300 mb-4 leading-relaxed">{t(`experience.experiences.${exp.key}.description`)}</p>
+      <ul className="text-gray-300 mb-4 leading-relaxed space-y-2 list-disc list-inside">
+        {t(`experience.experiences.${exp.key}.bullets`, { returnObjects: true }).map((bullet, idx) => (
+          <li key={idx} className="ml-2">{bullet}</li>
+        ))}
+      </ul>
 
       <div className="mt-4">
         <p className="text-sm text-purple-400 font-semibold mb-2">{t('experience.technologies')}</p>

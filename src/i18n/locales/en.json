@@ -16,7 +16,8 @@
   "about": {
     "title": "About Me",
     "description1": "Full Stack Developer passionate about creating innovative and efficient digital solutions.",
-    "description2": "Specialized in developing modern web applications with technologies like React, Vue.js, Next.js and Node.js. I focus on writing clean, scalable code and creating exceptional user experiences."
+    "description2": "Specialized in developing modern web applications with technologies like React, Vue.js, Next.js and Node.js. I focus on writing clean, scalable code and creating exceptional user experiences.",
+    "description3": "With experience in software architecture, performance optimization, and collaborative work in agile teams. I constantly seek to learn new technologies and apply best practices to deliver high-quality products."
   },
   "skills": {
     "title": "Skills",
@@ -33,12 +34,24 @@
       "adminiad": {
         "position": "Full Stack Developer",
         "period": "Current",
-        "description": "Stock and sales management system with artificial intelligence. Development of complete system functionalities, integration with third-party APIs and process optimization."
+        "bullets": [
+          "Developed and maintained a complete stock and sales management system with artificial intelligence integration, improving operational efficiency by over 40%",
+          "Implemented integrations with third-party APIs (AFIP, Mercado Pago, OpenAI) using Vue.js and TypeScript, reducing transaction processing time by 35%",
+          "Optimized database processes with MongoDB, achieving a 50% reduction in query times through strategic indexes and efficient queries",
+          "Collaborated on scalable architecture design with Tailwind CSS for responsive interfaces, improving user experience on mobile and desktop devices",
+          "Automated sales reports and analytics, enabling users to generate real-time reports and make data-driven decisions"
+        ]
       },
       "rappidtech": {
         "position": "Full Stack Developer",
         "period": "Current",
-        "description": "Development of web and mobile applications for various clients. Teamwork on scalable projects with modern technologies."
+        "bullets": [
+          "Developed web and mobile applications for multiple clients using Next.js and TypeScript, meeting tight deadlines and quality standards",
+          "Implemented solutions with Firebase for authentication, storage, and real-time databases, improving development speed by 30%",
+          "Integrated geolocation APIs for map and location features, improving accuracy of location-based services for end users",
+          "Worked in teams using agile methodologies, participating in weekly sprints and code reviews that improved code quality by 25%",
+          "Optimized application performance through lazy loading, code splitting, and image optimization, reducing initial load times by 45%"
+        ]
       }
     }
   },

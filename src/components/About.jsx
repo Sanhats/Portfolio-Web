@@ -26,8 +26,11 @@ const About = () => {
             <p className='text-xl text-gray-300 leading-relaxed mb-4'>
               {t('about.description1')}
             </p>
-            <p className='text-lg text-gray-400 leading-relaxed'>
+            <p className='text-lg text-gray-400 leading-relaxed mb-4'>
               {t('about.description2')}
+            </p>
+            <p className='text-lg text-gray-400 leading-relaxed'>
+              {t('about.description3')}
             </p>
           </div>
         </motion.div>

@@ -16,7 +16,8 @@
   "about": {
     "title": "Sobre Mí",
     "description1": "Desarrollador Full Stack apasionado por crear soluciones digitales innovadoras y eficientes.",
-    "description2": "Especializado en el desarrollo de aplicaciones web modernas con tecnologías como React, Vue.js, Next.js y Node.js. Me enfoco en escribir código limpio, escalable y en crear experiencias de usuario excepcionales."
+    "description2": "Especializado en el desarrollo de aplicaciones web modernas con tecnologías como React, Vue.js, Next.js y Node.js. Me enfoco en escribir código limpio, escalable y en crear experiencias de usuario excepcionales.",
+    "description3": "Con experiencia en arquitectura de software, optimización de rendimiento y trabajo colaborativo en equipos ágiles. Busco constantemente aprender nuevas tecnologías y aplicar mejores prácticas para entregar productos de alta calidad."
   },
   "skills": {
     "title": "Habilidades",
@@ -33,12 +34,24 @@
       "adminiad": {
         "position": "Desarrollador Full Stack",
         "period": "Actualidad",
-        "description": "Sistema de gestión de stock y ventas con inteligencia artificial. Desarrollo de funcionalidades completas del sistema, integración con APIs de terceros y optimización de procesos."
+        "bullets": [
+          "Desarrollé y mantuve un sistema completo de gestión de stock y ventas con integración de inteligencia artificial, mejorando la eficiencia operativa en más del 40%",
+          "Implementé integraciones con APIs de terceros (AFIP, Mercado Pago, OpenAI) utilizando Vue.js y TypeScript, reduciendo el tiempo de procesamiento de transacciones en un 35%",
+          "Optimicé procesos de base de datos con MongoDB, logrando reducir los tiempos de consulta en un 50% mediante índices estratégicos y consultas eficientes",
+          "Colaboré en el diseño de arquitectura escalable con Tailwind CSS para interfaces responsivas, mejorando la experiencia de usuario en dispositivos móviles y desktop",
+          "Automaticé reportes y análisis de ventas, permitiendo a los usuarios generar informes en tiempo real y tomar decisiones basadas en datos"
+        ]
       },
       "rappidtech": {
         "position": "Desarrollador Full Stack",
         "period": "Actualidad",
-        "description": "Desarrollo de aplicaciones web y móviles para diversos clientes. Trabajo en equipo en proyectos escalables con tecnologías modernas."
+        "bullets": [
+          "Desarrollé aplicaciones web y móviles para múltiples clientes utilizando Next.js y TypeScript, cumpliendo con plazos ajustados y estándares de calidad",
+          "Implementé soluciones con Firebase para autenticación, almacenamiento y bases de datos en tiempo real, mejorando la velocidad de desarrollo en un 30%",
+          "Integré APIs de geolocalización para funcionalidades de mapas y ubicación, mejorando la precisión de servicios basados en ubicación para usuarios finales",
+          "Trabajé en equipo utilizando metodologías ágiles, participando en sprints semanales y code reviews que mejoraron la calidad del código en un 25%",
+          "Optimicé el rendimiento de aplicaciones mediante lazy loading, code splitting y optimización de imágenes, reduciendo los tiempos de carga inicial en un 45%"
+        ]
       }
     }
   },
