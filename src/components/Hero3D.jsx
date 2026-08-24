@@ -39,8 +39,9 @@ const Hero3D = () => {
     camera.position.z = 5;
 
     // Animation
+    let animationFrame;
     const animate = () => {
-      requestAnimationFrame(animate);
+      animationFrame = requestAnimationFrame(animate);
       particlesMesh.rotation.x += 0.0003;
       particlesMesh.rotation.y += 0.0005;
       renderer.render(scene, camera);
@@ -59,8 +60,12 @@ const Hero3D = () => {
 
     // Clean up
     return () => {
+      cancelAnimationFrame(animationFrame);
       window.removeEventListener('resize', handleResize);
-      currentMount.removeChild(renderer.domElement);
+      particlesGeometry.dispose();
+      particlesMaterial.dispose();
+      renderer.dispose();
+      if (currentMount.contains(renderer.domElement)) currentMount.removeChild(renderer.domElement);
     };
   }, []);
 

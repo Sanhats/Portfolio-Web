@@ -40,7 +40,7 @@ const Contact = () => {
             href='https://linkedin.com/in/tomas-emanuel-sanchez-72670427b'
             target="_blank"
             rel="noopener noreferrer"
-            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
             aria-label="Visitar perfil de LinkedIn"
           >
             <FaLinkedin className='text-xl' aria-hidden="true" />
@@ -49,7 +49,7 @@ const Contact = () => {
 
           <a
             href={`mailto:${miCorreoElectronico}`}
-            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
             aria-label={`Enviar correo electrónico a ${miCorreoElectronico}`}
           >
             <HiOutlineMail className='text-xl' aria-hidden="true" />
@@ -61,7 +61,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             download="Tomas-Sanchez-CV.pdf"
-            className='group relative inline-flex items-center gap-2 px-8 py-3 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
             aria-label="Descargar currículum vitae en PDF"
           >
             <BsFillPersonLinesFill className='text-xl' aria-hidden="true" />

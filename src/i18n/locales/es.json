@@ -10,14 +10,13 @@
     "greeting": "Hola, mi nombre es",
     "name": "Tomas Sanchez",
     "title": "Desarrollador Full Stack",
-    "description": "Especializado en crear experiencias digitales excepcionales. Actualmente enfocado en desarrollar aplicaciones web interactivas e innovadoras, tanto en el lado del servidor como del cliente.",
-    "viewSkills": "Ver Habilidades"
+    "description": "Transformo problemas de negocio en productos web rápidos, claros y fáciles de usar.",
+    "cta": "Hablemos"
   },
   "about": {
     "title": "Sobre Mí",
-    "description1": "Desarrollador Full Stack apasionado por crear soluciones digitales innovadoras y eficientes.",
-    "description2": "Especializado en el desarrollo de aplicaciones web modernas con tecnologías como React, Vue.js, Next.js y Node.js. Me enfoco en escribir código limpio, escalable y en crear experiencias de usuario excepcionales.",
-    "description3": "Con experiencia en arquitectura de software, optimización de rendimiento y trabajo colaborativo en equipos ágiles. Busco constantemente aprender nuevas tecnologías y aplicar mejores prácticas para entregar productos de alta calidad."
+    "description1": "Soy desarrollador Full Stack y me gusta convertir ideas complejas en experiencias digitales simples.",
+    "description2": "Trabajo principalmente con React, Vue, Next.js y Node.js. Me importan tanto el código mantenible como los detalles que hacen que un producto se sienta rápido, útil y confiable."
   },
   "skills": {
     "title": "Habilidades",

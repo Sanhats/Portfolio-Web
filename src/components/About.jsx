@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section 
       name='about' 
-      className='w-full min-h-screen bg-[#0a192f] text-gray-300 flex items-center justify-center'
+      className='w-full min-h-[70vh] bg-[#0a192f] text-gray-300 flex items-center justify-center py-24'
       aria-label="Sección sobre mí"
     >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
@@ -26,11 +26,8 @@ const About = () => {
             <p className='text-xl text-gray-300 leading-relaxed mb-4'>
               {t('about.description1')}
             </p>
-            <p className='text-lg text-gray-400 leading-relaxed mb-4'>
-              {t('about.description2')}
-            </p>
             <p className='text-lg text-gray-400 leading-relaxed'>
-              {t('about.description3')}
+              {t('about.description2')}
             </p>
           </div>
         </motion.div>

@@ -23,7 +23,7 @@ const LanguageSelector = () => {
     <div className="fixed top-5 left-5 z-50">
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-purple-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-purple-700 transition-colors duration-300 shadow-lg"
+        className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center gap-1 hover:bg-purple-700 transition-colors duration-300 shadow-lg shadow-purple-950/30"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Seleccionar idioma"

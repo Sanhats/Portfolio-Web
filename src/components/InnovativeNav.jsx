@@ -20,7 +20,7 @@ const InnovativeNav = () => {
   return (
     <div className="fixed top-5 right-5 z-50">
       <motion.button
-        className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center"
+        className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-purple-950/30"
         onClick={toggleNav}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -35,7 +35,7 @@ const InnovativeNav = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-purple-900 bg-opacity-90 flex items-center justify-center"
+            className="fixed inset-0 bg-[#0a192f]/95 backdrop-blur-sm flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -44,7 +44,7 @@ const InnovativeNav = () => {
             aria-label="Menú de navegación"
           >
             <motion.div
-              className="bg-white rounded-lg p-8"
+              className="bg-[#112240] border border-purple-400/20 rounded-2xl p-8 min-w-[260px]"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
@@ -55,7 +55,7 @@ const InnovativeNav = () => {
                   to={item.key}
                   smooth={true}
                   duration={500}
-                  className="block text-2xl text-purple-800 hover:text-purple-600 mb-4 cursor-pointer"
+                  className="block text-2xl text-gray-200 hover:text-purple-300 mb-4 cursor-pointer"
                   onClick={toggleNav}
                 >
                   <motion.div

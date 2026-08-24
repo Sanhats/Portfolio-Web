@@ -54,8 +54,9 @@ const ImmersiveBackground = () => {
     composer.addPass(bloomPass);
 
     // Animation
+    let animationFrame;
     const animate = () => {
-      requestAnimationFrame(animate);
+      animationFrame = requestAnimationFrame(animate);
       particlesMesh.rotation.x += 0.001;
       particlesMesh.rotation.y += 0.001;
       composer.render();
@@ -75,8 +76,13 @@ const ImmersiveBackground = () => {
 
     // Clean up
     return () => {
+      cancelAnimationFrame(animationFrame);
       window.removeEventListener('resize', handleResize);
-      currentMount.removeChild(renderer.domElement);
+      particlesGeometry.dispose();
+      particlesMaterial.dispose();
+      bloomPass.dispose();
+      renderer.dispose();
+      if (currentMount.contains(renderer.domElement)) currentMount.removeChild(renderer.domElement);
     };
   }, []);
 
