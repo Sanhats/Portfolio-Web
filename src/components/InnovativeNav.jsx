@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
@@ -9,6 +9,18 @@ const InnovativeNav = () => {
 
   const toggleNav = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', isOpen);
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setIsOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.classList.remove('menu-open');
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen]);
+
   const navItems = [
     { key: 'home', name: t('nav.home') },
     { key: 'about', name: t('nav.about') },
@@ -18,9 +30,9 @@ const InnovativeNav = () => {
   ];
 
   return (
-    <div className="fixed top-5 right-5 z-50">
+    <div className="fixed top-5 right-5 z-[70]">
       <motion.button
-        className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg shadow-purple-950/30"
+        className="nav-button"
         onClick={toggleNav}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -35,7 +47,8 @@ const InnovativeNav = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-[#0a192f]/95 backdrop-blur-sm flex items-center justify-center"
+            className="nav-overlay fixed inset-0 z-[65] backdrop-blur-sm flex items-center justify-center p-6"
+            onClick={toggleNav}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -44,7 +57,8 @@ const InnovativeNav = () => {
             aria-label="Menú de navegación"
           >
             <motion.div
-              className="bg-[#112240] border border-purple-400/20 rounded-2xl p-8 min-w-[260px]"
+              className="nav-panel border rounded-2xl p-8 min-w-[260px] max-w-full"
+              onClick={(event) => event.stopPropagation()}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
@@ -54,8 +68,9 @@ const InnovativeNav = () => {
                   key={item.key}
                   to={item.key}
                   smooth={true}
-                  duration={500}
-                  className="block text-2xl text-gray-200 hover:text-purple-300 mb-4 cursor-pointer"
+                  duration={450}
+                  offset={-16}
+                  className="block text-2xl site-ink hover:text-[#b8d86a] mb-4 cursor-pointer"
                   onClick={toggleNav}
                 >
                   <motion.div

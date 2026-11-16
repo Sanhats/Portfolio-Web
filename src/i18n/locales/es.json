@@ -7,16 +7,17 @@
     "contact": "Contacto"
   },
   "home": {
-    "greeting": "Hola, mi nombre es",
+    "greeting": "Hola, mi nombre es Tomás Sánchez",
     "name": "Tomas Sanchez",
     "title": "Desarrollador Full Stack",
-    "description": "Transformo problemas de negocio en productos web rápidos, claros y fáciles de usar.",
+    "headline": "Desarrollo productos web que convierten ideas en resultados.",
+    "description": "Desarrollador Full Stack especializado en construir interfaces claras, APIs confiables y herramientas que los equipos pueden usar de verdad.",
     "cta": "Hablemos"
   },
   "about": {
-    "title": "Sobre Mí",
-    "description1": "Soy desarrollador Full Stack y me gusta convertir ideas complejas en experiencias digitales simples.",
-    "description2": "Trabajo principalmente con React, Vue, Next.js y Node.js. Me importan tanto el código mantenible como los detalles que hacen que un producto se sienta rápido, útil y confiable."
+      "title": "Cómo trabajo",
+      "description1": "Me gusta trabajar en el punto donde producto, diseño y tecnología se encuentran: entender el problema, ordenar lo complejo y convertirlo en una experiencia clara.",
+      "description2": "Priorizo código mantenible, comunicación directa y decisiones que mejoren el producto a largo plazo. Para mí, una buena solución tiene que ser útil para quien la usa y sostenible para el equipo que la mantiene."
   },
   "skills": {
     "title": "Habilidades",
@@ -32,24 +33,18 @@
     "experiences": {
       "adminiad": {
         "position": "Desarrollador Full Stack",
-        "period": "Actualidad",
+        "period": "Julio 2025 — Enero 2026",
         "bullets": [
-          "Desarrollé y mantuve un sistema completo de gestión de stock y ventas con integración de inteligencia artificial, mejorando la eficiencia operativa en más del 40%",
-          "Implementé integraciones con APIs de terceros (AFIP, Mercado Pago, OpenAI) utilizando Vue.js y TypeScript, reduciendo el tiempo de procesamiento de transacciones en un 35%",
-          "Optimicé procesos de base de datos con MongoDB, logrando reducir los tiempos de consulta en un 50% mediante índices estratégicos y consultas eficientes",
-          "Colaboré en el diseño de arquitectura escalable con Tailwind CSS para interfaces responsivas, mejorando la experiencia de usuario en dispositivos móviles y desktop",
-          "Automaticé reportes y análisis de ventas, permitiendo a los usuarios generar informes en tiempo real y tomar decisiones basadas en datos"
+          "Desarrollé un sistema de gestión de stock y ventas con integración de inteligencia artificial.",
+          "Integré AFIP, Mercado Pago y OpenAI; optimicé MongoDB y reportes para agilizar las operaciones."
         ]
       },
       "rappidtech": {
         "position": "Desarrollador Full Stack",
-        "period": "Actualidad",
+        "period": "Octubre 2025 — Abril 2026",
         "bullets": [
-          "Desarrollé aplicaciones web y móviles para múltiples clientes utilizando Next.js y TypeScript, cumpliendo con plazos ajustados y estándares de calidad",
-          "Implementé soluciones con Firebase para autenticación, almacenamiento y bases de datos en tiempo real, mejorando la velocidad de desarrollo en un 30%",
-          "Integré APIs de geolocalización para funcionalidades de mapas y ubicación, mejorando la precisión de servicios basados en ubicación para usuarios finales",
-          "Trabajé en equipo utilizando metodologías ágiles, participando en sprints semanales y code reviews que mejoraron la calidad del código en un 25%",
-          "Optimicé el rendimiento de aplicaciones mediante lazy loading, code splitting y optimización de imágenes, reduciendo los tiempos de carga inicial en un 45%"
+          "Desarrollé aplicaciones web y móviles con Next.js y TypeScript para múltiples clientes.",
+          "Trabajé con equipos ágiles y optimicé el rendimiento con lazy loading, code splitting y optimización de imágenes."
         ]
       }
     }

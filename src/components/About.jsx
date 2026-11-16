@@ -7,8 +7,7 @@ const About = () => {
 
   return (
     <section 
-      name='about' 
-      className='w-full min-h-[70vh] bg-[#0a192f] text-gray-300 flex items-center justify-center py-24'
+      className='site-section screen-section site-canvas flex items-center justify-center'
       aria-label="Sección sobre mí"
     >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
@@ -19,14 +18,14 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className='text-4xl font-bold inline border-b-4 border-purple-600 mb-8'>
+          <h2 className='section-title'>
             {t('about.title')}
           </h2>
           <div className="max-w-3xl mx-auto mt-8">
-            <p className='text-xl text-gray-300 leading-relaxed mb-4'>
+            <p className='text-xl site-ink leading-relaxed mb-4'>
               {t('about.description1')}
             </p>
-            <p className='text-lg text-gray-400 leading-relaxed'>
+            <p className='text-lg site-muted leading-relaxed'>
               {t('about.description2')}
             </p>
           </div>

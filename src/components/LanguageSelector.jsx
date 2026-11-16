@@ -20,18 +20,17 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="fixed top-5 left-5 z-50">
+    <div className="fixed top-5 left-5 z-[70]">
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center gap-1 hover:bg-purple-700 transition-colors duration-300 shadow-lg shadow-purple-950/30"
+        className="language-button"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Seleccionar idioma"
         aria-expanded={isOpen}
       >
-        <FaGlobe className="text-lg" />
-        <span className="hidden sm:inline">{currentLanguage.flag}</span>
-        <span className="hidden md:inline text-sm font-medium">{currentLanguage.name}</span>
+        <FaGlobe className="text-base" />
+        <span className="text-xs font-bold">{currentLanguage.code.toUpperCase()}</span>
         <FaChevronDown className={`text-xs transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </motion.button>
 
@@ -39,14 +38,14 @@ const LanguageSelector = () => {
         {isOpen && (
           <>
             <motion.div
-              className="fixed inset-0 z-40"
+              className="fixed inset-0 z-[60] bg-black/5"
               onClick={() => setIsOpen(false)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             />
             <motion.div
-              className="absolute top-full left-0 mt-2 bg-[#112240] rounded-lg shadow-xl border border-purple-900/50 overflow-hidden z-50 min-w-[150px]"
+              className="language-menu"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
@@ -56,14 +55,14 @@ const LanguageSelector = () => {
                 <button
                   key={lang.code}
                   onClick={() => changeLanguage(lang.code)}
-                  className={`w-full px-4 py-3 flex items-center gap-3 text-left hover:bg-purple-900/50 transition-colors duration-200 ${
-                    i18n.language === lang.code ? 'bg-purple-900/30 text-purple-300' : 'text-gray-300'
+                  className={`language-option ${
+                    i18n.language === lang.code ? 'language-option-active' : ''
                   }`}
                 >
                   <span className="text-xl">{lang.flag}</span>
                   <span className="text-sm font-medium">{lang.name}</span>
                   {i18n.language === lang.code && (
-                    <span className="ml-auto text-purple-400">✓</span>
+                    <span className="ml-auto site-accent">✓</span>
                   )}
                 </button>
               ))}

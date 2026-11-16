@@ -7,16 +7,17 @@
     "contact": "Contact"
   },
   "home": {
-    "greeting": "Hi, my name is",
+    "greeting": "Hi, my name is Tomas Sanchez",
     "name": "Tomas Sanchez",
     "title": "Full Stack Developer",
-    "description": "I turn business problems into fast, clear and easy-to-use web products.",
+    "headline": "I build web products that turn ideas into results.",
+    "description": "Full Stack Developer focused on clear interfaces, reliable APIs and tools that teams can actually use.",
     "cta": "Let's talk"
   },
   "about": {
-    "title": "About Me",
-    "description1": "I'm a Full Stack Developer who enjoys turning complex ideas into simple digital experiences.",
-    "description2": "I mainly work with React, Vue, Next.js and Node.js. I care about maintainable code and the details that make a product feel fast, useful and reliable."
+      "title": "How I work",
+      "description1": "I like working where product, design and technology meet: understanding the problem, bringing clarity to complexity and turning it into a clear experience.",
+      "description2": "I value maintainable code, direct communication and decisions that improve a product over time. A good solution should be useful for the people who use it and sustainable for the team that maintains it."
   },
   "skills": {
     "title": "Skills",
@@ -32,24 +33,18 @@
     "experiences": {
       "adminiad": {
         "position": "Full Stack Developer",
-        "period": "Current",
+        "period": "July 2025 — January 2026",
         "bullets": [
-          "Developed and maintained a complete stock and sales management system with artificial intelligence integration, improving operational efficiency by over 40%",
-          "Implemented integrations with third-party APIs (AFIP, Mercado Pago, OpenAI) using Vue.js and TypeScript, reducing transaction processing time by 35%",
-          "Optimized database processes with MongoDB, achieving a 50% reduction in query times through strategic indexes and efficient queries",
-          "Collaborated on scalable architecture design with Tailwind CSS for responsive interfaces, improving user experience on mobile and desktop devices",
-          "Automated sales reports and analytics, enabling users to generate real-time reports and make data-driven decisions"
+          "Developed a stock and sales management system with artificial intelligence integration.",
+          "Integrated AFIP, Mercado Pago and OpenAI; optimized MongoDB and reporting to streamline operations."
         ]
       },
       "rappidtech": {
         "position": "Full Stack Developer",
-        "period": "Current",
+        "period": "October 2025 — April 2026",
         "bullets": [
-          "Developed web and mobile applications for multiple clients using Next.js and TypeScript, meeting tight deadlines and quality standards",
-          "Implemented solutions with Firebase for authentication, storage, and real-time databases, improving development speed by 30%",
-          "Integrated geolocation APIs for map and location features, improving accuracy of location-based services for end users",
-          "Worked in teams using agile methodologies, participating in weekly sprints and code reviews that improved code quality by 25%",
-          "Optimized application performance through lazy loading, code splitting, and image optimization, reducing initial load times by 45%"
+          "Developed web and mobile applications with Next.js and TypeScript for multiple clients.",
+          "Worked with agile teams and improved performance through lazy loading, code splitting and image optimization."
         ]
       }
     }

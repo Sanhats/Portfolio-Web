@@ -11,8 +11,7 @@ const Contact = () => {
 
   return (
     <section 
-      name='contact' 
-      className='w-full min-h-screen bg-[#0a192f] text-gray-300 flex items-center justify-center'
+      className='site-section screen-section site-canvas flex items-center justify-center'
       aria-label="Sección de contacto"
     >
       <div className='max-w-[1000px] w-full p-4 flex flex-col items-center'>
@@ -23,10 +22,10 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className='text-4xl font-bold inline-block border-b-4 border-purple-600 pb-2 mb-4'>
+          <h2 className='section-title'>
             {t('contact.title')}
           </h2>
-          <p className='text-xl mt-6 text-gray-300'>{t('contact.subtitle')}</p>
+          <p className='text-xl mt-6 site-ink'>{t('contact.subtitle')}</p>
         </motion.div>
 
         <motion.div 
@@ -40,7 +39,7 @@ const Contact = () => {
             href='https://linkedin.com/in/tomas-emanuel-sanchez-72670427b'
             target="_blank"
             rel="noopener noreferrer"
-            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='site-button site-button-outline'
             aria-label="Visitar perfil de LinkedIn"
           >
             <FaLinkedin className='text-xl' aria-hidden="true" />
@@ -49,7 +48,7 @@ const Contact = () => {
 
           <a
             href={`mailto:${miCorreoElectronico}`}
-            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='site-button site-button-outline'
             aria-label={`Enviar correo electrónico a ${miCorreoElectronico}`}
           >
             <HiOutlineMail className='text-xl' aria-hidden="true" />
@@ -61,7 +60,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             download="Tomas-Sanchez-CV.pdf"
-            className='group relative inline-flex items-center justify-center gap-2 w-48 h-12 border-2 border-purple-600 bg-transparent font-medium text-gray-300 transition-colors duration-300 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a192f]'
+            className='site-button site-button-outline'
             aria-label="Descargar currículum vitae en PDF"
           >
             <BsFillPersonLinesFill className='text-xl' aria-hidden="true" />
@@ -76,10 +75,10 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p className='text-lg text-gray-300'>
+          <p className='text-lg site-ink'>
             {t('contact.message')}
           </p>
-          <p className='text-sm mt-2 text-gray-400'>
+          <p className='text-sm mt-2 site-muted'>
             {t('contact.location')}
           </p>
         </motion.div>
